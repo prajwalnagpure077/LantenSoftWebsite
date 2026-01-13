@@ -13,16 +13,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-foreground/90 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-10 h-10 bg-primary flex items-center justify-center group-hover:bg-transparent border-2 border-primary transition-all duration-200">
-              <Sparkles className="w-5 h-5 text-primary-foreground group-hover:text-primary transition-colors" />
+              <Sparkles className="w-5 h-5 text-primary-foreground group-hover:text-primary-foreground transition-colors" />
             </div>
-            <span className="font-heading font-bold text-xl text-foreground uppercase tracking-wider">
-              Lumina
+            <span className="font-heading font-bold text-xl text-background uppercase tracking-wider">
+              LantenSoft placeholder
             </span>
           </a>
 
@@ -32,7 +32,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="font-heading font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+                className="font-heading font-medium text-muted-foreground hover:text-background transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -40,15 +40,15 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button variant="default" size="default">
               Join the Adventure
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-background"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="font-heading font-medium text-lg text-muted-foreground hover:text-foreground transition-colors py-2"
+                  className="font-heading font-medium text-lg text-muted-background hover:text-background transition-colors py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
