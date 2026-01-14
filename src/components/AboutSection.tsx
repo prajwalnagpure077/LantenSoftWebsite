@@ -42,17 +42,17 @@ const AboutSection = () => {
                 About Us
               </span>
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
-                A team of friends making{" "}
+                A solo dev making {" "}
                 <span className="italic">unforgettable</span>{" "}
                 adventures
               </h2>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Lumina Games was born from late-night gaming sessions and a shared dream: 
+              Lantensoft Games was born from late-night developement and a shared dream: 
               to create worlds that spark joy and bring people together. We're a small 
-              but mighty team of artists, designers, and developers who believe that 
-              the best games come from genuine friendship and endless curiosity.
+              but we believe that 
+              the best games come from genuine curiosity.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -64,19 +64,19 @@ const AboutSection = () => {
 
             <div className="flex items-center gap-6 pt-4">
               <div className="text-center">
-                <div className="text-4xl font-heading font-bold text-foreground">12</div>
+                <div className="text-4xl font-heading font-bold text-foreground">1</div>
                 <div className="text-sm text-muted-foreground">Team Members</div>
               </div>
               <div className="w-px h-12 bg-border" />
               <div className="text-center">
-                <div className="text-4xl font-heading font-bold text-foreground">3</div>
-                <div className="text-sm text-muted-foreground">Games Released</div>
+                <div className="text-4xl font-heading font-bold text-foreground">1</div>
+                <div className="text-sm text-muted-foreground">Games in Production</div>
               </div>
-              <div className="w-px h-12 bg-border" />
+              {/* <div className="w-px h-12 bg-border" />
               <div className="text-center">
                 <div className="text-4xl font-heading font-bold text-foreground">500K+</div>
                 <div className="text-sm text-muted-foreground">Players</div>
-              </div>
+              </div> */}
             </div>
           </div>
           

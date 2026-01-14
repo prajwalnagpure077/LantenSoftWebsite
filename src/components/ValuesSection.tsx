@@ -11,15 +11,15 @@ const values = [
     title: "Artful Craft",
     description: "Every detail matters. We obsess over pixels, sounds, and feelings.",
   },
-  {
-    icon: Users2,
-    title: "Together Always",
-    description: "We make decisions together, celebrate together, and grow together.",
-  },
+  // {
+  //   icon: Users2,
+  //   title: "Together Always",
+  //   description: "We make decisions together, celebrate together, and grow together.",
+  // },
   {
     icon: Coffee,
     title: "Sustainable Joy",
-    description: "No crunch, just good vibes. We believe happy teams make happy games.",
+    description: "No crunch, just good vibes. We believe happy devs make happy games.",
   },
   {
     icon: Zap,
@@ -82,11 +82,11 @@ const ValuesSection = () => {
           </blockquote>
           <div className="mt-6 flex items-center justify-center gap-4">
             <div className="w-12 h-12 border-2 border-foreground flex items-center justify-center">
-              <span className="font-heading font-bold text-foreground">AK</span>
+              <span className="font-heading font-bold text-foreground">PN</span>
             </div>
             <div className="text-left">
-              <div className="font-heading font-semibold text-foreground uppercase tracking-wide">Alex Kim</div>
-              <div className="text-sm text-muted-foreground">Co-Founder & Creative Director</div>
+              <div className="font-heading font-semibold text-foreground uppercase tracking-wide">Prajwal Nagpure</div>
+              <div className="text-sm text-muted-foreground">Founder & CEO</div>
             </div>
           </div>
         </div>

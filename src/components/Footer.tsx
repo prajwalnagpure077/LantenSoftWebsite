@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    Games: ["Echoes of Aethermoor", "Kitchen Chaos Chronicles", "The Violet Sanctum"],
-    Company: ["About", "Careers", "Press Kit", "Blog"],
-    Support: ["Help Center", "Community", "Contact", "Privacy Policy"],
+    Games: ["FOOLz"],
+    Company: ["About", "Press Kit"],
+    Support: [/* "Help Center",  */"Community", "Contact", "Privacy Policy"],
   };
 
   return (
@@ -20,16 +20,15 @@ const Footer = () => {
                 <Sparkles className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="font-heading font-bold text-xl text-foreground uppercase tracking-wider">
-                Lumina
+                Lantensoft
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               A cozy game studio where creativity meets friendship. We craft whimsical PC and console adventures that bring people together.
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-secondary fill-secondary" />
-              <span>in Portland, OR</span>
+              <span>Made with</span>💖
+              <span>in India</span>
             </div>
           </div>
 
@@ -58,7 +57,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Lumina Games. All rights reserved.
+            © {currentYear} Lantensoft Games. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">

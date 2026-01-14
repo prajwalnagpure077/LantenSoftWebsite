@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 poly-pattern" />
+      {/* <div className="absolute inset-0 poly-pattern" /> */}
       
       {/* Sharp geometric shapes */}
       <div className="absolute top-32 left-10 w-16 h-16 border-2 border-foreground/10 rotate-12 animate-float" />
@@ -20,7 +20,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left space-y-8">
             <div className="inline-flex items-center gap-2 border-2 border-foreground/20 px-4 py-2 text-sm font-medium text-muted-foreground uppercase tracking-wider animate-fade-in">
               <span className="w-2 h-2 bg-foreground" />
-              Crafting adventures since 2019
+              Crafting adventures since November 2025
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
