@@ -22,7 +22,7 @@ const Navbar = () => {
               <Sparkles className="w-5 h-5 text-primary-foreground group-hover:text-primary-foreground transition-colors" />
             </div>
             <span className="font-heading font-bold text-xl text-background uppercase tracking-wider">
-              LantenSoft placeholder
+              LantenSoft
             </span>
           </a>
 

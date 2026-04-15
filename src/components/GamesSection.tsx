@@ -16,16 +16,6 @@ const games = [
   //   rating: 4.8,
   //   featured: true,
   // },
-  // {
-  //   id: 2,
-  //   title: "Kitchen Chaos Chronicles",
-  //   description: "A hilarious co-op cooking game where friendship and recipes collide in magical chaos.",
-  //   image: game2,
-  //   platforms: ["PC", "PlayStation", "Xbox"],
-  //   status: "Available Now",
-  //   rating: 4.6,
-  //   featured: false,
-  // },
   {
     id: 3,
     title: "FOOLz",
@@ -36,6 +26,16 @@ const games = [
     rating: null,
     featured: true,
     url: "https://store.steampowered.com/app/4235060/Foolz/"
+  },
+  {
+    id: 2,
+    title: "GenFlow",
+    description: "A Procedural object placement tool",
+    image: game2,
+    platforms: ["Unity Asset"],
+    status: "Available Now",
+    rating: null,
+    featured: true,
   },
 ];
 
