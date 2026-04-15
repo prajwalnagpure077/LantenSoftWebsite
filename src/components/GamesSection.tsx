@@ -50,7 +50,7 @@ const GamesSection = () => {
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <span className="inline-block px-4 py-1.5 border-2 border-foreground text-foreground font-heading font-semibold text-sm uppercase tracking-wider">
-            Our Games
+            Our Work
           </span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
             Adventures crafted with{" "}<span className="italic">love & joy</span>
