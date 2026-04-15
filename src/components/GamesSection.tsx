@@ -35,6 +35,7 @@ const games = [
     status: "Coming Soon",
     rating: null,
     featured: true,
+    url: "https://store.steampowered.com/app/4235060/Foolz/"
   },
 ];
 
@@ -44,7 +45,7 @@ const GamesSection = () => {
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-24 h-24 border-2 border-foreground/5" />
       <div className="absolute bottom-20 right-10 w-32 h-32 border-2 border-foreground/5 rotate-12" />
-      
+
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
@@ -62,69 +63,70 @@ const GamesSection = () => {
         {/* Games grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {games.map((game, index) => (
-            <Card 
-              key={game.id} 
-              variant="game"
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 0.15}s` }}
-            >
-              {/* Game image */}
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={game.image}
-                  alt={game.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
-                {/* Status badge */}
-                <div className={`absolute top-4 left-4 px-3 py-1 text-xs font-heading font-semibold uppercase tracking-wider ${
-                  game.status === "Available Now" 
-                    ? "bg-foreground text-background" 
-                    : "bg-background text-foreground border-2 border-foreground"
-                }`}>
-                  {game.status}
-                </div>
+            <a href={game.url} target="_blank">
+              <Card
+                key={game.id}
+                variant="game"
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                {/* Game image */}
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                {/* Rating */}
-                {game.rating && (
-                  <div className="absolute top-4 right-4 flex items-center gap-1 bg-foreground text-background px-2 py-1 text-sm font-semibold">
-                    <Star className="w-3.5 h-3.5 fill-current" />
-                    {game.rating}
+                  {/* Status badge */}
+                  <div className={`absolute top-4 left-4 px-3 py-1 text-xs font-heading font-semibold uppercase tracking-wider ${game.status === "Available Now"
+                      ? "bg-foreground text-background"
+                      : "bg-background text-foreground border-2 border-foreground"
+                    }`}>
+                    {game.status}
                   </div>
-                )}
-              </div>
-              
-              <CardContent className="p-6 space-y-4">
-                <div>
-                  <h3 className="font-heading font-bold text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {game.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
-                    {game.description}
-                  </p>
-                </div>
-                
-                {/* Platforms */}
-                <div className="flex flex-wrap gap-2">
-                  {game.platforms.map((platform) => (
-                    <span
-                      key={platform}
-                      className="px-3 py-1 border border-border text-muted-foreground text-xs font-medium uppercase tracking-wide"
-                    >
-                      {platform}
-                    </span>
-                  ))}
+
+                  {/* Rating */}
+                  {game.rating && (
+                    <div className="absolute top-4 right-4 flex items-center gap-1 bg-foreground text-background px-2 py-1 text-sm font-semibold">
+                      <Star className="w-3.5 h-3.5 fill-current" />
+                      {game.rating}
+                    </div>
+                  )}
                 </div>
 
-                {/* CTA */}
-                <Button variant="ghost" className="w-full group/btn">
-                  {game.status === "Available Now" ? "Learn More" : "Wishlist"}
-                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                </Button>
-              </CardContent>
-            </Card>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h3 className="font-heading font-bold text-xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {game.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm line-clamp-2">
+                      {game.description}
+                    </p>
+                  </div>
+
+                  {/* Platforms */}
+                  <div className="flex flex-wrap gap-2">
+                    {game.platforms.map((platform) => (
+                      <span
+                        key={platform}
+                        className="px-3 py-1 border border-border text-muted-foreground text-xs font-medium uppercase tracking-wide"
+                      >
+                        {platform}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* CTA */}
+                  <Button variant="ghost" className="w-full group/btn">
+                    {game.status === "Available Now" ? "Learn More" : "Wishlist"}
+                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+                  </Button>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
       </div>

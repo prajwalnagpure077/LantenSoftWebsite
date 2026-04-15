@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background pattern */}
       {/* <div className="absolute inset-0 poly-pattern" /> */}
-      
+
       {/* Sharp geometric shapes */}
       <div className="absolute top-32 left-10 w-16 h-16 border-2 border-foreground/10 rotate-12 animate-float" />
       <div className="absolute top-48 right-20 w-12 h-12 bg-muted animate-float-slow" />
@@ -22,7 +22,7 @@ const HeroSection = () => {
               <span className="w-2 h-2 bg-foreground" />
               Crafting adventures since November 2025
             </div>
-            
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
               We make games
               <br />
@@ -30,29 +30,31 @@ const HeroSection = () => {
               <br />
               for friends.
             </h1>
-            
+
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
               A cozy game studio where creativity meets friendship. We craft whimsical PC and console adventures that bring people together.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              <Button variant="hero">
+              {/* <Button variant="hero">
                 Explore Our Games
                 <ArrowRight className="w-5 h-5" />
-              </Button>
-              <Button variant="hero-outline">
-                <Play className="w-5 h-5" />
-                Watch Trailer
-              </Button>
+              </Button> */}
+              <a href="https://www.youtube.com/watch?v=-JzpNXiZVHQ" target="_blank">
+                <Button variant="hero-outline">
+                  <Play className="w-5 h-5" />
+                  Watch Trailer
+                </Button>
+              </a>
             </div>
           </div>
-          
+
           {/* Hero Illustration */}
           <div className="relative animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative animate-float-slow">
-              <img 
-                src={heroIllustration} 
-                alt="Whimsical low-poly floating island with a cozy game studio" 
+              <img
+                src={heroIllustration}
+                alt="Whimsical low-poly floating island with a cozy game studio"
                 className="w-full max-w-2xl mx-auto drop-shadow-2xl"
               />
               {/* Glow effect behind illustration */}
